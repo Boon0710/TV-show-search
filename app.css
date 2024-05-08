@@ -1,0 +1,22 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 500px; /* Adjust based on your preference */
+}
+
+.card-img-top {
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.card-body {
+    overflow-y: auto; /* Allows scrolling within card body */
+    flex-grow: 1; /* Allows card body to fill available space */
+}
+
+.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit to three lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
